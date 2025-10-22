@@ -2,13 +2,13 @@
 
 import React from "react";
 import { FaCheckCircle, FaEdit, FaTrash } from "react-icons/fa";
-import { item } from "@/utils/types";
+import { item, ReactSetState } from "@/utils/types";
 
 type ItemsList = {
     items:item[];
-    setItems:React.Dispatch<React.SetStateAction<item[]>>;
-    setInputData:React.Dispatch<React.SetStateAction<string>>;
-    setEditId:React.Dispatch<React.SetStateAction<string>>;
+    setItems:ReactSetState<item[]>;
+    setInputData:ReactSetState<string>;
+    setEditId:ReactSetState<string>;
 }
 
 function ItemsList({ items,setItems,setInputData,setEditId }:ItemsList) {

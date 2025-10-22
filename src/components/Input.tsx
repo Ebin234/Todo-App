@@ -1,8 +1,9 @@
-import React, { Dispatch, SetStateAction } from "react"
+import React from "react"
+import { ReactSetState } from "@/utils/types"
 
 type Input= {
     inputData:string;
-    setInputData:Dispatch<SetStateAction<string>>;
+    setInputData:ReactSetState<string>;
 }
 
 export default function Input ({inputData,setInputData}:Input){
